@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css"
+  </head>
+  <body>
+    <div class="form-layout">
+      <form method="get" action="index.html">
+
+        <div>
+          <label class="input-text">Full Name</label>
+          <input class="text-box" type="text" name="userName"><br />
+        </div>
+
+        <div>
+          <label class="input-text">Phone Number</label>
+          <input class="text-box" type="text" name="phoneNumber"><br />
+        </div>
+
+        <div>
+          <label class="input-text">E-mail</label>
+          <input class="text-box" type="text" name="userEmail"><br />
+        </div>
+
+        <div>
+          <label class="input-text">Occupation</label>
+          <select>
+            <option></option>
+            <option value="frontenddeveloper">Front End Developer</option>
+            <option value="railsdeveloper">Ruby on Rails Developer</option>
+            <option value="pythondeveloper">Python Developer</option>
+            <option value="tiystudent">Iron Yard Student</option>
+          </select><br />
+        </div>
+
+        <div>
+          <div class="bio">Give a Brief Bio</div></br>
+          <textarea name="textarea" placeholder="About You" rows="10" cols="50"></textarea>
+        </div>
+
+        <div>
+          <label class="gender">Male</label>
+          <input type="radio" name="gender" value="Male"></br>
+
+          <label class="gender">Female</label>
+          <input type="radio" name="gender" value="Female"><br />
+        </div>
+
+        <div>
+          <label class="sms-notifications">Receive SMS Notifications</label>
+          <input type="checkbox" name="notification" value="smsNotifications"><br />
+
+          <label class="email-notifications">Receive E-mail Notifications</label>
+          <input type="checkbox" name="notification" value="emailNotifications">
+        </div>
+
+        <div class="terms">
+          <label>By signing up, you are accepting the Terms and Conditions</label>
+          <input type="checkbox" name="terms" value="termsConditions">
+        </div>
+
+        <button type="submit">Sign Up</button>
+
+      </form>
+    </div>
+
+  </body>
+
+</html>
